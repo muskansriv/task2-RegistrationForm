@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Registration Form</title>
+        <style>
+            body{
+                background-color: purple;
+            }
+            #universal{
+                margin: 120px auto;
+                max-width: 400px;
+                width: 100%;
+                background: yellow;
+                border-radius: 5px;
+                padding: 10px;
+            }
+            #display{
+                margin: auto;
+                max-width: 400px;
+                width: 100%;
+                background: yellow;
+                border-radius: 5px;
+                padding: 0;
+            }
+            #universal input{
+                width: 85%;
+                height:100%;
+                border: 1px solid yellow;
+                font-size: 17px;
+                border-radius: 3px;
+                padding-left: 15px;
+
+
+            }
+            #universal button{
+                border: none;
+                outline: none;
+                background: purple;
+                color: yellow;
+                font-size: 22px;
+                cursor: pointer;
+                border-radius: 3px;
+                margin-left:66px;
+                opacity: 0.6;
+                pointer-events: none;
+
+            }
+            #universal button.active{
+                opacity: 1;
+                pointer-events: auto;
+            }
+            #display tr th{
+            
+                color: purple;
+                width: 45px;
+                text-align: center;
+                background: yellow;
+
+            }
+        
+
+        </style>
+    </head>
+<body>
+    <div id="universal">
+    <div id="container">
+        <div id="detail" class="input">
+            <div class="nam"><label>Name:<input id="namee" type="text" placeholder="Your Name"></label><br></div>
+            <div class="email"><label>Email id:<input id="mail" type="email" placeholder="email@abc"></label></div><br>
+            <div class="bd"></div><label>D.O.B:<input id="dob" type="date" placeholder="link"></label></div><br>
+            <div class="image"></div><label>Password:<input id="img" type="password"></label></div><br>
+            <div class="btn"><button class="active" id="submit" type="submit" onclick="docs()">Submit</button>
+            </div>
+            
+            
+        </div>
+        <table id="display">
+            <thread>
+            <tr>
+                <th>Name</th>
+                <th>Email Id</th>
+                <th>D.O.B</th>
+                <th>Password</th>
+            </tr>
+            </thread>
+        </table>
+    
+
+    <script src="script.js"></script>
+
+</body></html>
